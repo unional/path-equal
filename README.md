@@ -10,6 +10,7 @@
 [![semantic-release][semantic-release-image]][semantic-release-url]
 
 Check if two paths are the same.
+It only check the paths, will not access file system.
 
 ```ts
 import { pathEqual } from 'path-equal'

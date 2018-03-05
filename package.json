@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "npm run clean && npm run build-es5",
-    "build-es5": "tsc -p tsconfig.es5.json",
+    "build-es5": "tsc -p tsconfig.base.json",
     "clean": "rimraf dist-es5",
     "coverage": "jest --coverage",
     "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev",

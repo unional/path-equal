@@ -1,9 +1,7 @@
 export function pathEqual(actual: string, expected: string) {
   if (actual === expected) return true
 
-  const normalizedActual = normalizePath(actual)
-  const normalizedExpected = normalizePath(expected)
-  return normalizedActual === normalizedExpected
+  return normalizePath(actual) === normalizePath(expected)
 }
 
 function normalizePath(value: string) {

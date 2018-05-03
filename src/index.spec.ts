@@ -12,15 +12,15 @@ test('same style different value throws', () => {
   t.equal(pathEqual('a', 'b'), false)
 })
 
-test('UNIX style matches Windows style', () => {
+test('separator: \ matches /', () => {
   t(pathEqual('a/b', 'a\\b'))
   t(pathEqual('a/b/c', 'a\\b\\c'))
   t(pathEqual('a\\b', 'a/b'))
   t(pathEqual('a\\b\\c', 'a/b/c'))
 })
 
-test(`/d/foo should match d:\\foo`, () => {
-  expect(pathEqual('/d/foo', 'd:\\foo')).toBe(true)
+test(`drive letter: /d/foo should match d:\\foo`, () => {
+  t(pathEqual('/d/foo', 'd:\\foo'))
 })
 
 test(`with '.' (current dir)`, () => {

@@ -9,7 +9,7 @@ test('path with same style passes', () => {
 })
 
 test('same style different value throws', () => {
-  t.equal(pathEqual('a', 'b'), false)
+  t.strictEqual(pathEqual('a', 'b'), false)
 })
 
 test('separator: \ matches /', () => {

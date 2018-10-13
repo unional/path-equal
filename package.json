@@ -1,12 +1,21 @@
 {
   "name": "path-equal",
-  "description": "Check if the file path are equal",
   "version": "0.0.0-development",
-  "main": "dist-es5/index.js",
-  "typings": "dist-es5/index.d.ts",
+  "description": "Check if the file path are equal",
+  "homepage": "https://github.com/unional/path-equal",
+  "bugs": {
+    "url": "https://github.com/unional/path-equal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unional/path-equal.git"
+  },
+  "license": "MIT",
   "files": [
     "dist-es5"
   ],
+  "main": "dist-es5/index.js",
+  "typings": "dist-es5/index.d.ts",
   "scripts": {
     "build": "npm run clean && npm run build-es5",
     "build-es5": "tsc -p tsconfig.base.json",
@@ -17,42 +26,31 @@
     "prepublishOnly": "npm run clean && npm run build",
     "test": "tsc && jest",
     "verify": "npm run lint && npm run coverage && npm run build && npm run dependency-check",
-    "watch": "jest --watch",
-    "semantic-release": "semantic-release"
+    "watch": "jest --watch"
   },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/unional/path-equal.git"
-  },
-  "bugs": {
-    "url": "https://github.com/unional/path-equal/issues"
-  },
-  "homepage": "https://github.com/unional/path-equal",
   "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": ".*.spec.ts$",
     "moduleFileExtensions": [
       "ts",
       "js"
     ],
     "roots": [
       "<rootDir>/src"
-    ]
+    ],
+    "testRegex": ".*.spec.ts$",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
   },
   "devDependencies": {
-    "@types/jest": "^22.2.3",
-    "@types/node": "^9.6.9",
-    "dependency-check": "^3.1.0",
-    "eslint": "^5.0.0",
+    "@types/jest": "^23.3.5",
+    "@types/node": "^10.11.7",
+    "dependency-check": "^3.2.1",
+    "eslint": "^5.7.0",
     "eslint-plugin-unional": "^1.0.0",
-    "jest": "^22.4.3",
-    "semantic-release": "^15.2.0",
-    "ts-jest": "^22.4.4",
-    "tslint": "^5.9.1",
-    "tslint-config-unional": "^0.9.3",
-    "typescript": "^2.8.3"
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
+    "tslint": "^5.11.0",
+    "tslint-config-unional": "^0.10.0",
+    "typescript": "^3.1.3"
   }
 }

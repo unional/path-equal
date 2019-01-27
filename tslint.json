@@ -1,6 +1,3 @@
 {
-  "extends": "tslint-config-unional/semi-standard",
-  "rules": {
-    "no-empty": false
-  }
+  "extends": "tslint-config-unional/semi-standard"
 }

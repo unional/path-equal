@@ -9,14 +9,23 @@
 [![Greenkeeper badge][green-keeper-image]][green-keeper-url]
 [![semantic-release][semantic-release-image]][semantic-release-url]
 
-Check if two paths are the same.
-It only check the paths, will not access file system.
+File paths in Unix and Windows are different.
+During test, sometimes we want to compare if the file paths are the same.
+
+Doing this comparison can get unwieldy.
+But not doing it would means the project can only be develop in specific platform.
+
+This library provides this comparison to check if the two paths are the same,
+regardless of the running platform.
 
 ```ts
 import { pathEqual } from 'path-equal'
 
 pathEqual('dir/sub-dir/file.txt', 'dir\\sub-dir\\file.txt') // true
 ```
+
+This library will not access the file system,
+so comparing absolute path with relative path will fail.
 
 ## Contribute
 

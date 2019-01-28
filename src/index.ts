@@ -1,1 +1,1 @@
-export * from './pathEqual'
+export * from './pathEqual';

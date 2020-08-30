@@ -12,7 +12,7 @@ test('same style different value throws', () => {
   t.strictEqual(pathEqual('a', 'b'), false)
 })
 
-test('separator: \ matches /', () => {
+test('separator: \\ matches /', () => {
   t(pathEqual('a/b', 'a\\b'))
   t(pathEqual('a/b/c', 'a\\b\\c'))
   t(pathEqual('a\\b', 'a/b'))

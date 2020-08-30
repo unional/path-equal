@@ -20,6 +20,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "clean": "rimraf lib",
+    "codacy": "cat coverage/lcov.info | codacy-coverage",
     "coverage": "yarn test --coverage",
     "depcheck": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev",
     "lint": "eslint --ext js,ts .",

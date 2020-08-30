@@ -20,11 +20,12 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "clean": "rimraf lib",
+    "coverage": "yarn test --coverage",
     "depcheck": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev",
     "lint": "eslint --ext js,ts .",
-    "test": "jest",
+    "test": "jest --maxWorkers=60%",
     "verify": "yarn lint && yarn build && yarn depcheck && jest --coverage",
-    "watch": "jest --watch"
+    "watch": "yarn test --watch"
   },
   "husky": {
     "hooks": {

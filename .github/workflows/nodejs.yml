@@ -38,11 +38,11 @@ jobs:
         with:
           name: lib
           path: lib
-      - name: upload libm folder
-        uses: actions/upload-artifact@v1
-        with:
-          name: libm
-          path: libm
+      # - name: upload libm folder
+      #   uses: actions/upload-artifact@v1
+      #   with:
+      #     name: libm
+      #     path: libm
   test:
     runs-on: ${{ matrix.os }}
     needs: build
@@ -110,10 +110,10 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: lib
-      - name: download libm folder
-        uses: actions/download-artifact@v1
-        with:
-          name: libm
+      # - name: download libm folder
+      #   uses: actions/download-artifact@v1
+      #   with:
+      #     name: libm
       - name: cache node_modules
         uses: actions/cache@v1
         with:

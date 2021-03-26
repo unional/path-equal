@@ -1,0 +1,13 @@
+.circleci
+.github
+.vscode
+/scripts
+/src
+/typings
+.editorconfig
+.eslintignore
+*.json
+*.js
+.travis.yml
+tsconfig*
+!package.json

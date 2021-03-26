@@ -1,17 +1,22 @@
-export function pathEqual(actual: string, expected: string) {
-  if (actual === expected) return true
+const pathEqual = (actual: string, expected: string): boolean =>
+  normalizePath(actual) === normalizePath(expected);
 
-  return normalizePath(actual) === normalizePath(expected)
-}
+const normalizePath = (path: string): string => {
+  const replace: [RegExp, string][] = [
+    [/\\/g, "/"],
+    [/(\w):/, "/$1"],
+    [/(\w+)\/\.\.\/?/g, ""],
+    [/(\w+)\/\.\.\/?/g, ""],
+    [/(\w+)\/\.\.\/?/g, ""],
+    [/^\.\//, ""],
+    [/\/\.\//, "/"],
+    [/\/\.$/, ""],
+    [/\/$/, ""],
+  ];
 
-function normalizePath(value: string) {
-  return value.replace(/\\/g, '/')
-    .replace(/(\w):/, '/$1')
-    .replace(/(\w+)\/\.\.\/?/g, '')
-    .replace(/(\w+)\/\.\.\/?/g, '')
-    .replace(/(\w+)\/\.\.\/?/g, '') // just lazy right now to support '../../..'
-    .replace(/^\.\//, '')
-    .replace(/\/\.\//, '/')
-    .replace(/\/\.$/, '')
-    .replace(/\/$/, '')
-}
+  replace.forEach((array) => (path = path.replace(array[0], array[1])));
+
+  return path;
+};
+
+export default pathEqual;

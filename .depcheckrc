@@ -1,0 +1,9 @@
+ignores:
+  - "@commitlint/*"
+  - "@types/jest"
+  - '@types/node'
+  - "babel-jest"
+  - "commitlint-circle"
+  - "jest-junit"
+  - "npm-check-updates"
+  - "semantic-release"

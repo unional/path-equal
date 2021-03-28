@@ -43,6 +43,6 @@ node_modules
 .idea
 
 # project folders
-dist*
-lib
-out*
+cjs
+esm
+*.tsbuildinfo

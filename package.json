@@ -15,19 +15,23 @@
     "name": "Homa Wong (unional)",
     "email": "homawong@gmail.com"
   },
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "typings": "cjs/index.d.ts",
   "files": [
-    "lib"
+    "cjs",
+    "esm"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "clean": "rimraf lib",
-    "coverage": "yarn test --coverage",
-    "depcheck": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev",
-    "lint": "eslint --ext js,ts .",
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "clean": "rimraf cjs esm coverage",
+    "coverage": "jest --coverage --maxWorkers=60%",
+    "nuke": "yarn clean && rimraf node_modules",
+    "lint": "eslint",
     "test": "jest --maxWorkers=60%",
-    "verify": "yarn lint && yarn build && yarn depcheck && jest --coverage",
+    "verify": "yarn lint && yarn build && yarn depcheck && yarn coverage",
     "watch": "yarn test --watch"
   },
   "husky": {
@@ -36,9 +40,28 @@
     }
   },
   "devDependencies": {
-    "@unional/devpkg-node": "^1.5.0",
-    "assertron": "^7.1.3",
-    "codacy-coverage": "^3.4.0",
-    "commitlint-circle": "^1.0.0"
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.13.8",
+    "@babel/plugin-proposal-optional-chaining": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "@babel/preset-typescript": "^7.13.0",
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@types/jest": "^26.0.20",
+    "babel-jest": "^26.6.3",
+    "commitlint-circle": "^1.0.0",
+    "depcheck": "^1.4.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-harmony": "^5.0.2",
+    "husky": "^5.1.1",
+    "jest": "^26.6.3",
+    "jest-junit": "^12.0.0",
+    "jest-progress-tracker": "^2.0.2",
+    "jest-watch-repeat": "^2.0.0",
+    "jest-watch-suspend": "^1.1.2",
+    "jest-watch-toggle-config": "^2.0.1",
+    "jest-watch-typeahead": "^0.6.1",
+    "npm-check-updates": "^11.1.9",
+    "typescript": "^4.2.2"
   }
 }

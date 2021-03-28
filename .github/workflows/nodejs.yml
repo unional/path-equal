@@ -82,7 +82,7 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
       - name: codacy
-        if: matrix.node-version == 14 && matrix.os == 'ubuntu-latest'&& ${{ env.INPUT_PROJECT_TOKEN != '' }}
+        if: matrix.node-version == 14 && matrix.os == 'ubuntu-latest' && ${{ env.INPUT_PROJECT_TOKEN != '' }}
         uses: codacy/codacy-coverage-reporter-action@master
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}

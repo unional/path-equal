@@ -1,14 +1,7 @@
 {
-  "extends": "./tsconfig.build.json",
-  "compilerOptions": {
-    "plugins": [
-      {
-        "name": "tslint-language-service"
-      }
-    ]
-  },
+  "extends": "./tsconfig.esm.json",
   "include": [
-    "src",
+    "ts",
     "typings"
   ]
 }

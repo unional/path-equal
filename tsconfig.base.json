@@ -1,23 +1,25 @@
 {
   "compilerOptions": {
-    "declaration": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "incremental": true,
+    "inlineSourceMap": true,
     "lib": [
       "es2015"
     ],
-    "module": "commonjs",
     "moduleResolution": "node",
     "newLine": "LF",
-    "noImplicitAny": false,
     "noUnusedLocals": true,
-    "noUnusedParameters": false,
-    "outDir": "dist-es5",
+    "noUnusedParameters": true,
     "removeComments": false,
-    "sourceMap": true,
-    "strictNullChecks": true,
-    "target": "es5"
+    "skipLibCheck": true,
+    "strict": true
   },
+  "include": [
+    "typings"
+  ],
   "files": [
-    "src/index.ts"
+    "ts/index.ts"
   ]
 }

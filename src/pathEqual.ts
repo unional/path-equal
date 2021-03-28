@@ -1,5 +1,5 @@
 export function pathEqual(actual: string, expected: string): boolean {
-  return normalizePath(actual) === normalizePath(expected)
+  return (actual === expected) || (normalizePath(actual) === normalizePath(expected))
 }
 
 function normalizePath(path: string): string {

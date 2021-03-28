@@ -4,13 +4,13 @@ export function pathEqual(actual: string, expected: string): boolean {
 
 function normalizePath(path: string): string {
   const replace: [RegExp, string][] = [
-    [/\\/g, "/"],
-    [/(\w):/, "/$1"],
-    [/(\w+)\/\.\.\/?/g, ""],
-    [/^\.\//, ""],
-    [/\/\.\//, "/"],
-    [/\/\.$/, ""],
-    [/\/$/, ""],
+    [/\\/g, '/'],
+    [/(\w):/, '/$1'],
+    [/(\w+)\/\.\.\/?/g, ''],
+    [/^\.\//, ''],
+    [/\/\.\//, '/'],
+    [/\/\.$/, ''],
+    [/\/$/, ''],
   ];
 
   replace.forEach((array) => {

@@ -17,6 +17,7 @@
   },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
+  "files": ["lib"],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "clean": "rimraf lib",

@@ -31,7 +31,7 @@ test(`with '.' (current dir)`, () => {
   t(pathEqual('a/b/./c/d/./e', 'a/b/c/d/e'))
 })
 
-test("with '..' (parent dir)", () => {
+test(`with '..' (parent dir)`, () => {
   t(pathEqual('a/../b', 'b'))
   t(pathEqual('a/b/../', 'a'))
   t(pathEqual('a/b/..', 'a'))

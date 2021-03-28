@@ -1,12 +1,11 @@
-const pathEqual = (actual: string, expected: string): boolean =>
-  normalizePath(actual) === normalizePath(expected);
+export function pathEqual(actual: string, expected: string): boolean {
+  return normalizePath(actual) === normalizePath(expected);
+}
 
-const normalizePath = (path: string): string => {
+function normalizePath(path: string): string {
   const replace: [RegExp, string][] = [
     [/\\/g, "/"],
     [/(\w):/, "/$1"],
-    [/(\w+)\/\.\.\/?/g, ""],
-    [/(\w+)\/\.\.\/?/g, ""],
     [/(\w+)\/\.\.\/?/g, ""],
     [/^\.\//, ""],
     [/\/\.\//, "/"],
@@ -14,9 +13,11 @@ const normalizePath = (path: string): string => {
     [/\/$/, ""],
   ];
 
-  replace.forEach((array) => (path = path.replace(array[0], array[1])));
+  replace.forEach((array) => {
+    while (array[0].test(path)) {
+      path = path.replace(array[0], array[1]);
+    }
+  });
 
   return path;
-};
-
-export default pathEqual;
+}

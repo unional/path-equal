@@ -25,7 +25,7 @@ This library provides this comparison to check if the two paths are the same,
 regardless of the running platform.
 
 ```ts
-import pathEqual from 'path-equal'
+import { pathEqual } from 'path-equal'
 
 pathEqual('dir/sub-dir/file.txt', 'dir\\sub-dir\\file.txt') // true
 ```

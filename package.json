@@ -1,6 +1,6 @@
 {
-  "name": "@moraj/path-equal",
-  "version": "1.0.0",
+  "name": "path-equal",
+  "version": "0.0.0-development",
   "description": "Check if the file path are equal",
   "homepage": "https://github.com/unional/path-equal",
   "bugs": {

@@ -1,3 +1,2 @@
-release:
-  branches:
-    - main
+branches:
+  - main

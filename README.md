@@ -12,14 +12,24 @@
 
 [![Visual Studio Code][vscode-image]][vscode-url]
 
-File paths in Unix and Windows are different.
-During test, sometimes we want to compare if the file paths are the same.
+Compare file path regardless of platforms.
 
-Doing this comparison can get unwieldy.
-But not doing it would means the project can only be develop in specific platform.
+The file paths in Unix and Windows are different.
+
+If you do not compare them correctly,
+your code might work on one platform but not another.
 
 This library provides this comparison to check if the two paths are the same,
 regardless of the running platform.
+
+## Install
+
+```sh
+npm install path-equal
+yarn add path-equal
+```
+
+## Usage
 
 ```ts
 import { pathEqual } from 'path-equal'
@@ -34,11 +44,11 @@ so comparing absolute path with relative path will fail.
 
 ```sh
 # after fork and clone
-npm install
+yarn
 
 # begin making changes
 git checkout -b <branch>
-npm run watch
+yarn watch
 
 # after making change(s)
 git commit -m "<commit message>"

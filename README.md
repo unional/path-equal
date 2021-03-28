@@ -63,8 +63,8 @@ git push
 [codecov-image]: https://codecov.io/gh/unional/path-equal/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/unional/path-equal
 [downloads-image]: https://img.shields.io/npm/dm/path-equal.svg?style=flat
-[github-nodejs]: https://github.com/unional/path-equal/workflows/nodejs/badge.svg
-[github-action-url]: https://github.com/unional/path-equal/actions
+[github-nodejs]: https://github.com/unional/path-equal/actions/workflows/nodejs.yml/badge.svg
+[github-action-url]: https://github.com/unional/path-equal/actions/workflows/nodejs.yml
 [npm-image]: https://img.shields.io/npm/v/path-equal.svg?style=flat
 [npm-url]: https://npmjs.org/package/path-equal
 [semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg

@@ -19,11 +19,11 @@ test('separator: \\ matches /', () => {
   t(pathEqual('a\\b\\c\\', 'a/b/c'))
 })
 
-test('drive letter: /d/foo should match d:\\foo', () => {
+test(`drive letter: /d/foo should match d:\\foo`, () => {
   t(pathEqual('/d/foo', 'd:\\foo'))
 })
 
-test("with '.' (current dir)", () => {
+test(`with '.' (current dir)`, () => {
   t(pathEqual('./a', 'a'))
   t(pathEqual('a/b/.', 'a/b'))
   t(pathEqual('a/b/./', 'a/b'))

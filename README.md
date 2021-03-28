@@ -4,8 +4,9 @@
 [![NPM downloads][downloads-image]][npm-url]
 
 [![Github NodeJS][github-nodejs]][github-action-url]
+[![Codacy Grade][codacy-grade]][codacy-url]
+[![Codacy Coverage][codacy-coverage]][codacy-url]
 [![Codecov][codecov-image]][codecov-url]
-[![Codacy Badge][codacy-image]][codacy-url]
 
 [![Semantic Release][semantic-release-image]][semantic-release-url]
 
@@ -46,8 +47,9 @@ git push
 # create PR
 ```
 
-[codacy-image]: https://app.codacy.com/project/badge/Grade/197fc8889591484fbfa7218938669471
-[codacy-url]: https://www.codacy.com/gh/unional/path-equal/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=unional/path-equal&amp;utm_campaign=Badge_Grade
+[codacy-grade]: https://app.codacy.com/project/badge/Grade/197fc8889591484fbfa7218938669471
+[codacy-coverage]: https://app.codacy.com/project/badge/Coverage/197fc8889591484fbfa7218938669471
+[codacy-url]: https://www.codacy.com/gh/unional/path-equal/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=unional/path-equal
 [codecov-image]: https://codecov.io/gh/unional/path-equal/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/unional/path-equal
 [downloads-image]: https://img.shields.io/npm/dm/path-equal.svg?style=flat

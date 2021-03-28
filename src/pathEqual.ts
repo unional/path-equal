@@ -1,5 +1,5 @@
 export function pathEqual(actual: string, expected: string): boolean {
-  return normalizePath(actual) === normalizePath(expected);
+  return normalizePath(actual) === normalizePath(expected)
 }
 
 function normalizePath(path: string): string {
@@ -13,11 +13,11 @@ function normalizePath(path: string): string {
     [/\/$/, ''],
   ];
 
-  replace.forEach((array) => {
+  replace.forEach(array => {
     while (array[0].test(path)) {
-      path = path.replace(array[0], array[1]);
+      path = path.replace(array[0], array[1])
     }
-  });
+  })
 
-  return path;
+  return path
 }

@@ -79,14 +79,11 @@ jobs:
       - name: codecov
         if: matrix.node-version == 14 && matrix.os == 'ubuntu-latest'
         uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
       - name: codacy
         if: matrix.node-version == 14 && matrix.os == 'ubuntu-latest' && github.repository == 'unional/path-equal'
         uses: codacy/codacy-coverage-reporter-action@master
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          coverage-reports: coverage/clover.xml
   release:
     name: release
     runs-on: ubuntu-latest

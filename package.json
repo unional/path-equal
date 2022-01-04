@@ -15,6 +15,7 @@
     "name": "Homa Wong (unional)",
     "email": "homawong@gmail.com"
   },
+  "sideEffects": false,
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "cjs/index.d.ts",

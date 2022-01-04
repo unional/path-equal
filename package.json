@@ -17,21 +17,26 @@
   },
   "main": "cjs/index.js",
   "module": "esm/index.js",
-  "typings": "cjs/index.d.ts",
+  "types": "cjs/index.d.ts",
   "files": [
     "cjs",
-    "esm"
+    "esm",
+    "ts"
   ],
   "scripts": {
-    "build": "yarn build:cjs && yarn build:esm",
+    "build": "run-p build:cjs build:esm",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json",
     "clean": "rimraf cjs esm coverage",
     "coverage": "jest --coverage --maxWorkers=60%",
+    "dependency-check": "depcheck",
+    "lint": "eslint --ext=ts,js .",
     "nuke": "yarn clean && rimraf node_modules",
-    "lint": "eslint",
-    "test": "jest --maxWorkers=60%",
-    "verify": "yarn lint && yarn build && yarn depcheck && yarn coverage",
+    "release": "npx semantic-release",
+    "size-limit": "size-limit",
+    "test": "jest",
+    "verify": "run-p verify:build lint coverage",
+    "verify:build": "npm-run-all clean build --parallel dependency-check size-limit",
     "watch": "yarn test --watch"
   },
   "husky": {
@@ -40,29 +45,35 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.13.8",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.13.8",
-    "@babel/plugin-proposal-optional-chaining": "^7.13.8",
-    "@babel/preset-env": "^7.13.8",
-    "@babel/preset-typescript": "^7.13.0",
-    "@commitlint/cli": "^12.0.1",
-    "@commitlint/config-conventional": "^12.0.1",
-    "@types/jest": "^26.0.20",
-    "babel-jest": "^26.6.3",
-    "commitlint-circle": "^1.0.0",
-    "depcheck": "^1.4.0",
-    "eslint": "^7.20.0",
-    "eslint-plugin-harmony": "^5.0.2",
-    "husky": "^5.1.1",
-    "jest": "^26.6.3",
-    "jest-junit": "^12.0.0",
-    "jest-progress-tracker": "^2.0.2",
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.16.7",
+    "@babel/plugin-proposal-optional-chaining": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@size-limit/preset-small-lib": "^7.0.5",
+    "@types/jest": "^27.4.0",
+    "babel-jest": "^27.4.5",
+    "depcheck": "^1.4.2",
+    "eslint": "^8.6.0",
+    "eslint-plugin-harmony": "^6.0.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.5",
+    "jest-junit": "^13.0.0",
+    "jest-progress-tracker": "^3.0.1",
     "jest-watch-repeat": "^2.0.0",
     "jest-watch-suspend": "^1.1.2",
     "jest-watch-toggle-config": "^2.0.1",
-    "jest-watch-typeahead": "^0.6.1",
-    "npm-check-updates": "^11.1.9",
-    "semantic-release": "^17.4.2",
-    "typescript": "^4.2.2"
-  }
+    "jest-watch-typeahead": "^1.0.0",
+    "npm-run-all": "^4.1.5",
+    "semantic-release": "^18.0.1",
+    "size-limit": "^7.0.5",
+    "typescript": "^4.5.4"
+  },
+  "size-limit": [
+    {
+      "limit": "5 KB"
+    }
+  ]
 }

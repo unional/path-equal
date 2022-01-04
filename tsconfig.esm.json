@@ -3,7 +3,6 @@
   "compilerOptions": {
     "module": "esnext",
     "outDir": "esm",
-    "target": "ES2019",
-    "tsBuildInfoFile": ".ts/esm.tsbuildinfo"
+    "target": "ES2019"
   }
 }

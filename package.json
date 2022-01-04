@@ -61,7 +61,6 @@
     "eslint-plugin-harmony": "^6.0.0",
     "husky": "^7.0.4",
     "jest": "^27.4.5",
-    "jest-junit": "^13.0.0",
     "jest-progress-tracker": "^3.0.1",
     "jest-watch-repeat": "^2.0.0",
     "jest-watch-suspend": "^1.1.2",

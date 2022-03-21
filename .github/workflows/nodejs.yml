@@ -19,3 +19,7 @@ jobs:
     needs: test
     secrets:
       npm-token: ${{ secrets.NPM_TOKEN }}
+  docgen:
+    if: github.ref == 'refs/heads/main'
+    uses: unional/.github/.github/workflows/build-docs.yml@main
+    needs: release

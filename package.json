@@ -1,7 +1,7 @@
 {
   "name": "path-equal",
   "version": "0.0.0-development",
-  "description": "Check if the file path are equal",
+  "description": "Determine if two the file paths are equal",
   "homepage": "https://github.com/unional/path-equal",
   "bugs": {
     "url": "https://github.com/unional/path-equal/issues"
@@ -28,6 +28,7 @@
     "build": "run-p build:cjs build:esm",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json",
+    "build:doc": "typedoc",
     "clean": "rimraf cjs esm coverage",
     "coverage": "jest --coverage --maxWorkers=60%",
     "dependency-check": "depcheck",
@@ -46,30 +47,32 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
+    "@babel/core": "^7.17.8",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.16.7",
     "@babel/plugin-proposal-optional-chaining": "^7.16.7",
-    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
-    "@commitlint/cli": "^16.0.1",
-    "@commitlint/config-conventional": "^16.0.0",
-    "@size-limit/preset-small-lib": "^7.0.5",
-    "@types/jest": "^27.4.0",
-    "babel-jest": "^27.4.5",
-    "depcheck": "^1.4.2",
-    "eslint": "^8.6.0",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@types/jest": "^27.4.1",
+    "babel-jest": "^27.5.1",
+    "depcheck": "^1.4.3",
+    "eslint": "^8.11.0",
     "eslint-plugin-harmony": "^6.0.0",
     "husky": "^7.0.4",
-    "jest": "^27.4.5",
-    "jest-progress-tracker": "^3.0.1",
+    "jest": "^27.5.1",
+    "jest-progress-tracker": "^3.0.4",
     "jest-watch-repeat": "^2.0.0",
     "jest-watch-suspend": "^1.1.2",
     "jest-watch-toggle-config": "^2.0.1",
     "jest-watch-typeahead": "^1.0.0",
     "npm-run-all": "^4.1.5",
     "semantic-release": "^19.0.0",
-    "size-limit": "^7.0.5",
-    "typescript": "^4.5.4"
+    "size-limit": "^7.0.8",
+    "typedoc": "^0.22.13",
+    "typedoc-plugin-extras": "^2.2.3",
+    "typescript": "^4.6.2"
   },
   "size-limit": [
     {

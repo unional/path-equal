@@ -44,5 +44,6 @@ node_modules
 
 # project folders
 cjs
+docs
 esm
 *.tsbuildinfo

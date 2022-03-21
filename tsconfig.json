@@ -3,5 +3,13 @@
   "include": [
     "ts",
     "typings"
-  ]
+  ],
+  "typedocOptions": {
+    "customTitle": "Determine if two the file paths are equal",
+    "customTitleLink": "https://github.com/unional/path-equal",
+    "entryPoints": [
+      "ts/index.ts"
+    ],
+    "out": "docs"
+  }
 }

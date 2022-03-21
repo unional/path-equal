@@ -5,7 +5,7 @@
     "typings"
   ],
   "typedocOptions": {
-    "customTitle": "Determine if two the file paths are equal",
+    "customTitle": "Determine if two file paths are equal across platforms",
     "customTitleLink": "https://github.com/unional/path-equal",
     "entryPoints": [
       "ts/index.ts"

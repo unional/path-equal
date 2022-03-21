@@ -12,7 +12,7 @@
 
 [![Visual Studio Code][vscode-image]][vscode-url]
 
-Compare file path regardless of platforms.
+Compare two file paths regardless of platforms.
 
 The file paths in Unix and Windows are different.
 

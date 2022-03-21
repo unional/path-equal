@@ -1,3 +1,6 @@
+/**
+ * Compare if the two file paths are considered equal.
+ */
 export function pathEqual(actual: string, expected: string): boolean {
   return (actual === expected) || (normalizePath(actual) === normalizePath(expected))
 }

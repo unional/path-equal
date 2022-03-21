@@ -5,3 +5,5 @@ ignores:
   - "@types/jest"
   - "babel-jest"
   - "jest-junit"
+  - typedoc
+  - typedoc-plugin-extras

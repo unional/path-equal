@@ -35,16 +35,14 @@
     "depcheck": "depcheck",
     "lint": "eslint --ext=ts,js .",
     "nuke": "yarn clean && rimraf node_modules",
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --endable",
     "size": "size-limit",
     "test": "jest",
     "verify": "run-p verify:build lint coverage",
     "verify:build": "npm-run-all clean build --parallel depcheck size",
     "watch": "yarn test --watch"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
@@ -65,7 +63,7 @@
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-harmony": "^7.0.2",
-    "husky": "^7.0.4",
+    "husky": "^8.0.1",
     "jest": "^28.1.0",
     "jest-progress-tracker": "^3.0.4",
     "jest-util": "^28.1.0",
@@ -75,6 +73,7 @@
     "jest-watch-toggle-config": "^2.0.1",
     "jest-watch-typeahead": "^1.1.0",
     "npm-run-all": "^4.1.5",
+    "pinst": "^3.0.0",
     "rimraf": "^3.0.2",
     "size-limit": "^7.0.8",
     "typedoc": "^0.22.13",

@@ -4494,6 +4494,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-prettier@npm:^8.5.0":
+  version: 8.5.0
+  resolution: "eslint-config-prettier@npm:8.5.0"
+  peerDependencies:
+    eslint: ">=7.0.0"
+  bin:
+    eslint-config-prettier: bin/cli.js
+  checksum: 0d0f5c32e7a0ad91249467ce71ca92394ccd343178277d318baf32063b79ea90216f4c81d1065d60f96366fdc60f151d4d68ae7811a58bd37228b84c2083f893
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-harmony@npm:^7.0.2":
   version: 7.0.2
   resolution: "eslint-plugin-harmony@npm:7.0.2"
@@ -6232,14 +6243,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-regex-util@npm:^27.0.0":
-  version: 27.5.1
-  resolution: "jest-regex-util@npm:27.5.1"
-  checksum: d45ca7a9543616a34f7f3079337439cf07566e677a096472baa2810e274b9808b76767c97b0a4029b8a5b82b9d256dee28ef9ad4138b2b9e5933f6fac106c418
-  languageName: node
-  linkType: hard
-
-"jest-regex-util@npm:^28.0.2":
+"jest-regex-util@npm:^28.0.0, jest-regex-util@npm:^28.0.2":
   version: 28.0.2
   resolution: "jest-regex-util@npm:28.0.2"
   checksum: 0ea8c5c82ec88bc85e273c0ec82e0c0f35f7a1e2d055070e50f0cc2a2177f848eec55f73e37ae0d045c3db5014c42b2f90ac62c1ab3fdb354d2abd66a9e08add
@@ -6463,20 +6467,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-watch-typeahead@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "jest-watch-typeahead@npm:1.0.0"
+"jest-watch-typeahead@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "jest-watch-typeahead@npm:1.1.0"
   dependencies:
     ansi-escapes: ^4.3.1
     chalk: ^4.0.0
-    jest-regex-util: ^27.0.0
-    jest-watcher: ^27.0.0
+    jest-regex-util: ^28.0.0
+    jest-watcher: ^28.0.0
     slash: ^4.0.0
     string-length: ^5.0.1
     strip-ansi: ^7.0.1
   peerDependencies:
-    jest: ^27.0.0
-  checksum: 388d5189744e3fad21a8dd9e7fb5bbb9e8c12b4d07b76f8fa9c8df47fa93f25427602b20d9061431abb54290f9a24690adbf5204fd2d8cef7a7688c2f81db18d
+    jest: ^27.0.0 || ^28.0.0
+  checksum: 59b0a494ac01e3801c9ec586de3209153eedb024b981e25443111c5703711d23b67ebc71b072986c1758307e0bfb5bf1c92bd323f73f58602d6f4f609dce6a0c
   languageName: node
   linkType: hard
 
@@ -6495,7 +6499,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-watcher@npm:^27.0.0, jest-watcher@npm:^27.4.6":
+"jest-watcher@npm:^27.4.6":
   version: 27.5.1
   resolution: "jest-watcher@npm:27.5.1"
   dependencies:
@@ -6510,7 +6514,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-watcher@npm:^28.1.0":
+"jest-watcher@npm:^28.0.0, jest-watcher@npm:^28.1.0":
   version: 28.1.0
   resolution: "jest-watcher@npm:28.1.0"
   dependencies:
@@ -7661,18 +7665,21 @@ __metadata:
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.33
     "@typescript-eslint/eslint-plugin": ^5.23.0
+    "@typescript-eslint/parser": ^5.23.0
     babel-jest: ^28.1.0
     depcheck: ^1.4.3
     eslint: ^8.11.0
+    eslint-config-prettier: ^8.5.0
     eslint-plugin-harmony: ^7.0.2
     husky: ^7.0.4
     jest: ^28.1.0
     jest-progress-tracker: ^3.0.4
     jest-util: ^28.1.0
+    jest-validate: ^28.1.0
     jest-watch-repeat: ^2.0.0
     jest-watch-suspend: ^1.1.2
     jest-watch-toggle-config: ^2.0.1
-    jest-watch-typeahead: ^1.0.0
+    jest-watch-typeahead: ^1.1.0
     npm-run-all: ^4.1.5
     size-limit: ^7.0.8
     typedoc: ^0.22.13

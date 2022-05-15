@@ -41,11 +41,6 @@
     "verify:build": "npm-run-all clean build --parallel dependency-check size-limit",
     "watch": "yarn test --watch"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.16.7",
@@ -60,7 +55,7 @@
     "depcheck": "^1.4.3",
     "eslint": "^8.11.0",
     "eslint-plugin-harmony": "^6.0.0",
-    "husky": "^7.0.4",
+    "husky": "^8.0.1",
     "jest": "^28.0.0",
     "jest-progress-tracker": "^3.0.4",
     "jest-watch-repeat": "^2.0.0",

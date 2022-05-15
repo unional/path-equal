@@ -3,7 +3,8 @@ ignores:
   - "@commitlint/*"
   - "@size-limit/preset-small-lib"
   - "@types/jest"
-  - "babel-jest"
-  - "jest-junit"
+  - babel-jest
+  - jest-junit
+  - jest-util
   - typedoc
   - typedoc-plugin-extras

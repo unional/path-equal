@@ -53,6 +53,7 @@ git push
 # create PR
 ```
 
+[codecov-image]: https://codecov.io/gh/unional/path-equal/branch/main/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/unional/path-equal
 [downloads-image]: https://img.shields.io/npm/dm/path-equal.svg?style=flat
 [github-nodejs]: https://github.com/unional/path-equal/actions/workflows/release.yml/badge.svg

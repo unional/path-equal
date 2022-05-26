@@ -3,6 +3,7 @@
     "depcheck",
     "macos",
     "pinst",
+    "pnpm",
     "snyk",
     "testname"
   ],

@@ -3,7 +3,7 @@
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][npm-url]
 
-[![Github NodeJS][github-nodejs]][github-action-url]
+[![GitHub NodeJS][github-nodejs]][github-action-url]
 [![Codecov][codecov-image]][codecov-url]
 
 [![Visual Studio Code][vscode-image]][vscode-url]
@@ -21,8 +21,17 @@ regardless of the running platform.
 ## Install
 
 ```sh
+# npm
 npm install path-equal
+
+# yarn
 yarn add path-equal
+
+# pnpm
+pnpm install path-equal
+
+#rush
+rush add -p path-equal
 ```
 
 ## Usage

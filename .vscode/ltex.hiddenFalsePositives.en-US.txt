@@ -1,0 +1,4 @@
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qpath-equal\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q[NPM version]npm-url [NPM downloads]npm-url\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q[GitHub NodeJS]github-action-url [Codecov]codecov-url\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q[Visual Studio Code]vscode-url\\E$"}

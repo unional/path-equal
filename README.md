@@ -12,6 +12,8 @@
 
 [![Visual Studio Code][vscode-image]][vscode-url]
 
+Dummy.
+
 Compare file path regardless of platforms.
 
 The file paths in Unix and Windows are different.

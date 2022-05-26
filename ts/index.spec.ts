@@ -7,7 +7,7 @@ test('path with same style passes', () => {
   t(pathEqual('a\\b', 'a\\b'))
 })
 
-test('same style different value throws', () => {
+test('same style different value fails', () => {
   t.strictEqual(pathEqual('a', 'b'), false)
 })
 

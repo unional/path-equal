@@ -1,6 +1,6 @@
 {
   "name": "path-equal",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "Determine if two the file paths are equal",
   "homepage": "https://github.com/unional/path-equal",
   "bugs": {
@@ -41,7 +41,7 @@
     "nuke": "yarn clean && rimraf node_modules",
     "postinstall": "husky install",
     "prepack": "pinst --disable",
-    "postpack": "pinst --endable",
+    "postpack": "pinst --enable",
     "size": "size-limit",
     "test": "jest",
     "verify": "npm-run-all clean -p build depcheck lint coverage -p size",

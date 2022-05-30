@@ -26,7 +26,8 @@
   "files": [
     "cjs",
     "esm",
-    "ts"
+    "ts",
+    "!ts/**/*.spec.ts"
   ],
   "scripts": {
     "build": "run-p build:cjs build:esm",

@@ -5,4 +5,4 @@ on:
 
 jobs:
   code:
-    uses: unional/.github/.github/workflows/yarn2-library-verify-linux.yml@main
+    uses: unional/.github/.github/workflows/yarn-verify-linux.yml@main

@@ -1,5 +1,5 @@
 import t from 'assert'
-import { pathEqual } from '.'
+import { pathEqual } from './index.js'
 
 test('path with same style passes', () => {
   t(pathEqual('a', 'a'))

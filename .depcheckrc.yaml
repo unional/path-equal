@@ -4,8 +4,7 @@ ignores:
   - "@size-limit/preset-small-lib"
   - "@types/jest"
   - "@typescript-eslint/parser"
-  - babel-jest
-  - jest-junit
-  - jest-util
+  - jest-*
+  - ts-jest
   - typedoc
   - typedoc-plugin-extras

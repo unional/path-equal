@@ -1,5 +1,11 @@
 # path-equal
 
+## 1.2.1
+
+### Patch Changes
+
+- cf4f7ef: remove extra source files
+
 ## 1.2.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "path-equal",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Determine if two the file paths are equal",
   "homepage": "https://github.com/unional/path-equal",
   "bugs": {

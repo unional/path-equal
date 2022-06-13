@@ -1,5 +1,11 @@
 # path-equal
 
+## 1.2.2
+
+### Patch Changes
+
+- Fix CommonJS usage by adding the `cjs/package.json` workaround.
+
 ## 1.2.1
 
 ### Patch Changes

@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/unional/path-equal/compare/v1.2.1...v1.2.2) (2022-06-13)
+
+
+### Bug Fixes
+
+* cjs usage ([4dc9110](https://github.com/unional/path-equal/commit/4dc9110797c8892436b7313637ae6517a75aa87c))
+
 # path-equal
 
 ## 1.2.2

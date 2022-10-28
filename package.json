@@ -40,7 +40,7 @@
     "depcheck": "depcheck",
     "lint": "eslint --ext=ts,js .",
     "nuke": "yarn clean && rimraf node_modules",
-    "postinstall": "husky install",
+    "prepare": "husky install",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable",
     "size": "size-limit",

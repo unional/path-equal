@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/unional/path-equal/compare/v1.2.2...v1.2.3) (2022-10-28)
+
+
+### Bug Fixes
+
+* husky should be in prepare step ([e2b807b](https://github.com/unional/path-equal/commit/e2b807bebfbaa33713b25564c0662181da1bdf5c)), closes [#78](https://github.com/unional/path-equal/issues/78)
+
 ## [1.2.2](https://github.com/unional/path-equal/compare/v1.2.1...v1.2.2) (2022-06-13)
 
 

@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/unional/path-equal/compare/v1.2.3...v1.2.4) (2022-10-28)
+
+
+### Bug Fixes
+
+* re-release ([f5b7099](https://github.com/unional/path-equal/commit/f5b7099d016d7f7bc262304875a21bc1f1aa545c))
+
 ## [1.2.3](https://github.com/unional/path-equal/compare/v1.2.2...v1.2.3) (2022-10-28)
 
 

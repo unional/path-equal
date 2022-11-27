@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/unional/path-equal/compare/v1.2.4...v1.2.5) (2022-11-27)
+
+
+### Bug Fixes
+
+* remove extra files from distribution ([91f833c](https://github.com/unional/path-equal/commit/91f833c345eb784c56dabd30a48a45cfa4a8d991))
+
 ## [1.2.4](https://github.com/unional/path-equal/compare/v1.2.3...v1.2.4) (2022-10-28)
 
 

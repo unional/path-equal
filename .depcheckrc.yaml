@@ -1,6 +1,7 @@
 ignores:
   - '@types/node'
   - "@commitlint/*"
+  - '@repobuddy/jest'
   - "@semantic-release/*"
   - "@size-limit/preset-small-lib"
   - "@types/jest"

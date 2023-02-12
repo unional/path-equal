@@ -47,6 +47,7 @@
     "postpack": "pinst --enable",
     "release": "semantic-release",
     "size": "size-limit",
+    "test:watch": "jest --watch",
     "test": "jest",
     "verify": "npm-run-all -p build depcheck lint coverage -p size",
     "watch": "jest --watch"

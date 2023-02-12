@@ -18,9 +18,9 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
+    "types": "./esm/index.d.ts",
     "import": "./esm/index.js",
-    "require": "./cjs/index.js",
-    "types": "./esm/index.d.ts"
+    "require": "./cjs/index.js"
   },
   "main": "./cjs/index.js",
   "types": "./esm/index.d.ts",

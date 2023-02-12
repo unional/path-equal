@@ -49,11 +49,11 @@ so comparing absolute path with relative path will fail.
 
 ```sh
 # after fork and clone
-yarn
+pnpm install
 
 # begin making changes
 git checkout -b <branch>
-yarn watch
+pnpm test:watch
 
 # after making change(s)
 git commit -m "<commit message>"

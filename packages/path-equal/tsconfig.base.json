@@ -1,7 +1,8 @@
 {
 	"compilerOptions": {
+		"composite": true,
+		"declarationMap": true,
 		"forceConsistentCasingInFileNames": true,
-		"inlineSourceMap": true,
 		"isolatedModules": true,
 		"lib": [
 			"es2015"
@@ -10,7 +11,7 @@
 		"newLine": "LF",
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"removeComments": false,
+		"rootDir": "ts",
 		"skipLibCheck": true,
 		"strict": true
 	},

@@ -1,4 +1,4 @@
-# path-plus
+# uni-path
 
 This repository contains packages that are related to path detection and manipulation.
 

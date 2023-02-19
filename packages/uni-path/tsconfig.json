@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"declarationMap": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"module": "Node16",
+		"moduleResolution": "node16",
+		"newLine": "LF",
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "esm",
+		"rootDir": "ts",
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ES2019"
+	},
+	"include": [
+		"ts",
+		"types"
+	],
+	"references": [
+		{
+			"path": "../path-equal"
+		}
+	],
+	"typedocOptions": {
+		"customTitle": "Universal path module",
+		"customTitleLink": "https://github.com/unional/path-equal",
+		"displayName": "uni-path"
+	}
+}

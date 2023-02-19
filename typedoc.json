@@ -1,7 +1,10 @@
 {
+	"name": "uni-path",
+	"customTitle": "Universal path module",
+	"customTitleLink": "https://github.com/unional/path-equal",
 	"entryPointStrategy": "packages",
-	"name": "path-plus",
 	"entryPoints": [
-		"packages/path-equal"
+		"packages/path-equal",
+		"packages/uni-path"
 	]
 }

@@ -1,16 +1,17 @@
+import { expect, it } from '@jest/globals'
 import { pathEqual } from './index.js'
 
-test('path with same style passes', () => {
+it('path with same style passes', () => {
 	expect(pathEqual('a', 'a')).toBe(true)
 	expect(pathEqual('a/b', 'a/b')).toBe(true)
 	expect(pathEqual('a\\b', 'a\\b')).toBe(true)
 })
 
-test('same style different value fails', () => {
+it('same style different value fails', () => {
 	expect(pathEqual('a', 'b')).toBe(false)
 })
 
-test('separator: \\ matches /', () => {
+it('separator: \\ matches /', () => {
 	expect(pathEqual('a/b', 'a\\b')).toBe(true)
 	expect(pathEqual('a/b/c', 'a\\b\\c')).toBe(true)
 	expect(pathEqual('a\\b', 'a/b')).toBe(true)
@@ -18,11 +19,11 @@ test('separator: \\ matches /', () => {
 	expect(pathEqual('a\\b\\c\\', 'a/b/c')).toBe(true)
 })
 
-test(`drive letter: /d/foo should match d:\\foo`, () => {
+it(`drive letter: /d/foo should match d:\\foo`, () => {
 	expect(pathEqual('/d/foo', 'd:\\foo')).toBe(true)
 })
 
-test(`with '.' (current dir)`, () => {
+it(`with '.' (current dir)`, () => {
 	expect(pathEqual('./a', 'a')).toBe(true)
 	expect(pathEqual('a/b/.', 'a/b')).toBe(true)
 	expect(pathEqual('a/b/./', 'a/b')).toBe(true)
@@ -30,7 +31,7 @@ test(`with '.' (current dir)`, () => {
 	expect(pathEqual('a/b/./c/d/./e', 'a/b/c/d/e')).toBe(true)
 })
 
-test(`with '..' (parent dir)`, () => {
+it(`with '..' (parent dir)`, () => {
 	expect(pathEqual('a/../b', 'b')).toBe(true)
 	expect(pathEqual('a/b/../', 'a')).toBe(true)
 	expect(pathEqual('a/b/..', 'a')).toBe(true)

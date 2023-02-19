@@ -10,6 +10,7 @@
 		"lint": "turbo run lint",
 		"nuke": "pnpm --no-bail --filter=* nuke && pnpm --no-bail nuke:local",
 		"nuke:local": "rimraf node_modules",
+		"path-equal": "pnpm --filter path-equal",
 		"postpack": "pinst --enable",
 		"prepack": "pinst --disable",
 		"prepare": "husky install",
@@ -19,6 +20,7 @@
 		"test:jsdom": "turbo run test:jsdom",
 		"test:nodejs": "turbo run test:nodejs",
 		"test": "turbo run test",
+		"uni-path": "pnpm --filter uni-path",
 		"verify": "turbo run build lint coverage depcheck size",
 		"version": "changeset version"
 	},

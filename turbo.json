@@ -1,0 +1,48 @@
+{
+	"$schema": "https://turborepo.org/schema.json",
+	"pipeline": {
+		"build": {
+			"dependsOn": ["^build"],
+			"inputs": ["fixtures", "ts", "tsconfig.*", "package.json"]
+		},
+		"clean": {
+			"cache": false
+		},
+		"coverage": {
+			"dependsOn": ["build"],
+			"inputs": ["fixtures", "ts", "jest.config.*", "tsconfig.*", "package.json"]
+		},
+		"depcheck": {
+			"dependsOn": ["build"]
+		},
+		"dev": {
+			"cache": false
+		},
+		"lint": {
+			"dependsOn": ["^build"]
+		},
+		"nuke": {
+			"cache": false
+		},
+		"size": {
+			"dependsOn": ["build"],
+			"inputs": ["fixtures", "ts", ".size-limit.*", "tsconfig.*", "package.json"]
+		},
+		"test": {
+			"dependsOn": ["build"],
+			"inputs": ["fixtures", "ts", "jest.config.*", "tsconfig.*", "package.json"]
+		},
+		"test:electron": {
+			"dependsOn": ["build"],
+			"inputs": ["fixtures", "ts", "jest.config.*", "tsconfig.*", "package.json"]
+		},
+		"test:jsdom": {
+			"dependsOn": ["build"],
+			"inputs": ["fixtures", "ts", "jest.config.*", "tsconfig.*", "package.json"]
+		},
+		"test:nodejs": {
+			"dependsOn": ["build"],
+			"inputs": ["fixtures", "ts", "jest.config.*", "tsconfig.*", "package.json"]
+		}
+	}
+}

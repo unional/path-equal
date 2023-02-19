@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"forceConsistentCasingInFileNames": true,
+		"inlineSourceMap": true,
+		"isolatedModules": true,
+		"lib": [
+			"es2015"
+		],
+		"moduleResolution": "node",
+		"newLine": "LF",
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"removeComments": false,
+		"skipLibCheck": true,
+		"strict": true
+	},
+	"include": [
+		"ts",
+		"types"
+	]
+}

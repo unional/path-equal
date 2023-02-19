@@ -1,15 +1,8 @@
 {
-  "extends": "./tsconfig.esm.json",
-  "include": [
-    "ts",
-    "typings"
-  ],
-  "typedocOptions": {
-    "customTitle": "Determine if two file paths are equal across platforms",
-    "customTitleLink": "https://github.com/unional/path-equal",
-    "entryPoints": [
-      "ts/index.ts"
-    ],
-    "out": "docs"
-  }
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/path-equal"
+    }
+  ]
 }

@@ -1,0 +1,7 @@
+{
+	"entryPointStrategy": "packages",
+	"name": "path-plus",
+	"entryPoints": [
+		"packages/path-equal"
+	]
+}

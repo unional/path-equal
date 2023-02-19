@@ -1,8 +1,8 @@
 {
-  "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "editorconfig.editorconfig",
-    "davidanson.vscode-markdownlint",
-    "unional.vscode-sort-package-json"
-  ]
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"editorconfig.editorconfig",
+		"davidanson.vscode-markdownlint",
+		"unional.vscode-sort-package-json"
+	]
 }

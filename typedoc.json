@@ -4,7 +4,6 @@
 	"customTitleLink": "https://github.com/unional/path-equal",
 	"entryPointStrategy": "packages",
 	"entryPoints": [
-		"packages/path-equal",
-		"packages/uni-path"
+		"packages/path-equal"
 	]
 }

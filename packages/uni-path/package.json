@@ -1,6 +1,7 @@
 {
 	"name": "uni-path",
 	"version": "0.0.0",
+	"private": true,
 	"description": "Universal path module",
 	"homepage": "https://github.com/unional/path-equal",
 	"bugs": {

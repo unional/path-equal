@@ -1,2 +1,3 @@
 packages:
+  - '!packages/uni-path'
   - packages/*

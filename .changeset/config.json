@@ -9,7 +9,7 @@
 	"changelog": "@changesets/cli/changelog",
 	"commit": false,
 	"fixed": [],
-	"ignore": [],
+	"ignore": ["uni-path"],
 	"linked": [],
 	"title": "chore: version packages",
 	"updateInternalDependencies": "patch"

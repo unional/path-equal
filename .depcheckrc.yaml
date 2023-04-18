@@ -7,6 +7,7 @@ ignores:
   - "@types/jest"
   - "@typescript-eslint/parser"
   - jest-*
+  - rimraf # depcheck issue
   - semantic-release
   - ts-jest
   - typedoc

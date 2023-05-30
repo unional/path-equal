@@ -61,10 +61,5 @@
 		"size-limit": "^8.2.4",
 		"ts-jest": "^29.0.5",
 		"typescript": "^5.0.0"
-	},
-	"typedoc": {
-		"displayName": "uni-path",
-		"entryPoint": "./ts/index.ts",
-		"readmeFile": "./README.md"
 	}
 }

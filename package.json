@@ -2,7 +2,7 @@
 	"private": true,
 	"scripts": {
 		"build": "turbo run build",
-		"build:doc": "typedoc",
+		"build:doc": "typedoc --plugin typedoc-plugin-extras",
 		"clean": "turbo run clean",
 		"coverage": "turbo run coverage",
 		"cs": "changeset",

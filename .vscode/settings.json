@@ -16,5 +16,6 @@
 			"url": "http://json.schemastore.org/tsconfig"
 		}
 	],
-	"typescript.enablePromptUseWorkspaceTsdk": true
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"liveServer.settings.port": 5501
 }

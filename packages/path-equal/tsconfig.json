@@ -3,6 +3,6 @@
 	"typedocOptions": {
 		"customTitle": "Determine if two file paths are equal across platforms",
 		"customTitleLink": "https://github.com/unional/path-equal",
-		"displayName": "path-equal"
+		"entryPoints": ["./ts/index.ts"]
 	}
 }

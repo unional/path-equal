@@ -23,10 +23,5 @@
 		{
 			"path": "../path-equal"
 		}
-	],
-	"typedocOptions": {
-		"customTitle": "Universal path module",
-		"customTitleLink": "https://github.com/unional/path-equal",
-		"displayName": "uni-path"
-	}
+	]
 }

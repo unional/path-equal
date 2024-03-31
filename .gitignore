@@ -42,5 +42,8 @@ node_modules
 # webstorm
 .idea
 
+# turborepo
+.turbo
+
 # repo files
 docs/

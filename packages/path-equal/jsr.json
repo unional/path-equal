@@ -1,0 +1,8 @@
+{
+	"$schema": "https://jsr.io/schema/config-file.v1.json",
+	"name": "@unional/path-equal",
+	"version": "1.2.5",
+	"exports": {
+		".": "./ts/index.ts"
+	}
+}

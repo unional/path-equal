@@ -41,6 +41,7 @@
 		"depcheck": "depcheck",
 		"dev": "jest --watch",
 		"nuke": "pnpm clean && rimraf node_modules",
+		"publish:jsr": "pnpm dlx jsr publish",
 		"size": "size-limit",
 		"test:watch": "jest --watch",
 		"test": "jest",

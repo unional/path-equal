@@ -38,7 +38,7 @@
 		"husky": "^9.0.11",
 		"turbo": "^1.13.0",
 		"typedoc": "^0.25.0",
-		"typedoc-plugin-extras": "^2.3.2",
+		"typedoc-plugin-extras": "^3.0.0",
 		"typescript": "^5.0.0"
 	},
 	"packageManager": "pnpm@8.15.5"

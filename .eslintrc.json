@@ -7,11 +7,5 @@
 	"extends": ["plugin:harmony/latest", "plugin:yml/standard"],
 	"parserOptions": {
 		"sourceType": "module"
-	},
-	"overrides": [
-		{
-			"extends": "plugin:harmony/ts-prettier",
-			"files": ["*.ts", "*.tsx"]
-		}
-	]
+	}
 }

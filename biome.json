@@ -1,0 +1,14 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.6.2/schema.json",
+	"extends": [
+		"./node_modules/@repobuddy/biome/recommended.json"
+	],
+	"files": {
+		"ignore": [
+			"packages/*/.turbo",
+			"packages/*/cjs",
+			"packages/*/coverage",
+			"packages/*/esm"
+		]
+	}
+}

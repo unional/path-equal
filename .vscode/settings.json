@@ -6,7 +6,8 @@
 		"pnpm",
 		"repobuddy",
 		"snyk",
-		"testname"
+		"testname",
+		"tsbuildinfo"
 	],
 	"json.schemas": [
 		{
@@ -16,6 +17,5 @@
 			"url": "http://json.schemastore.org/tsconfig"
 		}
 	],
-	"typescript.enablePromptUseWorkspaceTsdk": true,
-	"liveServer.settings.port": 5501
+	"typescript.enablePromptUseWorkspaceTsdk": true
 }

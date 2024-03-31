@@ -40,7 +40,6 @@
 		"cs": "changeset",
 		"depcheck": "depcheck",
 		"dev": "jest --watch",
-		"lint": "eslint --ext=ts,js .",
 		"nuke": "pnpm clean && rimraf node_modules",
 		"size": "size-limit",
 		"test:watch": "jest --watch",

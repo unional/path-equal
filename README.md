@@ -10,7 +10,7 @@ This repository contains packages that are related to path detection and manipul
 
 [path-equal] compare two file paths regardless of platforms
 
-[path-equal]: ./packages/path-equal/README.md
+[path-equal]: ./packages/path-equal/readme.md
 [codecov-image]: https://codecov.io/gh/unional/path-equal/branch/main/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/unional/path-equal
 [path-equal-downloads-image]: https://img.shields.io/npm/dm/path-equal.svg?style=flat

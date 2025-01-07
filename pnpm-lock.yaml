@@ -48,8 +48,8 @@ importers:
         specifier: ^0.27.0
         version: 0.27.1(typescript@5.0.2)
       typedoc-plugin-extras:
-        specifier: ^3.0.0
-        version: 3.0.0(typedoc@0.27.1(typescript@5.0.2))
+        specifier: ^4.0.0
+        version: 4.0.0(typedoc@0.27.1(typescript@5.0.2))
       typescript:
         specifier: ^5.0.0
         version: 5.0.2
@@ -3440,10 +3440,10 @@ packages:
   typed-array-length@1.0.4:
     resolution: {integrity: sha512-KjZypGq+I/H7HI5HlOoGHkWUUGq+Q0TPhQurLbyrVrvnKTBgzLhIJ7j6J/XTQOi0d1RjyZ0wdas8bKs2p0x3Ng==}
 
-  typedoc-plugin-extras@3.0.0:
-    resolution: {integrity: sha512-eiAe3qtm2WbV5owdncpt0zHZPqsNZH2mzNGILPd4zqrvEZie3Et9es4cpGZ+8lHO/SI0pVKwsAj7IuMxPNOdYg==}
+  typedoc-plugin-extras@4.0.0:
+    resolution: {integrity: sha512-wqImx4K39u9+M4mkRvBxds8BMzlxKXrhHwtOAGvgtQza+E9+h9YmYJIJsnFyF06XRmv/02tQIBan76A3GdpZFg==}
     peerDependencies:
-      typedoc: 0.25.x
+      typedoc: 0.27.x
 
   typedoc@0.27.1:
     resolution: {integrity: sha512-cbFtNFpkCtHAHRvMnCDdtM2+xhO2uiJAcw4ooLmVMuaY9yLJswKvi6wOwPZgTnKKnm/HKpO/Ub6DVk4KRf/vRg==}
@@ -7489,7 +7489,7 @@ snapshots:
       for-each: 0.3.3
       is-typed-array: 1.1.10
 
-  typedoc-plugin-extras@3.0.0(typedoc@0.27.1(typescript@5.0.2)):
+  typedoc-plugin-extras@4.0.0(typedoc@0.27.1(typescript@5.0.2)):
     dependencies:
       typedoc: 0.27.1(typescript@5.0.2)
 

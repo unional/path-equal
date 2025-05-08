@@ -49,7 +49,7 @@
 	},
 	"devDependencies": {
 		"@jest/globals": "^29.4.3",
-		"@repobuddy/jest": "^4.0.0",
+		"@repobuddy/jest": "^5.0.0",
 		"@size-limit/preset-small-lib": "^8.2.4",
 		"@types/node": "^20.0.0",
 		"depcheck": "^1.4.3",

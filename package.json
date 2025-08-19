@@ -28,7 +28,7 @@
 		"@changesets/cli": "^2.26.0",
 		"@commitlint/cli": "^19.0.0",
 		"@commitlint/config-conventional": "^19.0.0",
-		"@repobuddy/biome": "^1.2.1",
+		"@repobuddy/biome": "^2.0.0",
 		"@typescript-eslint/eslint-plugin": "^8.0.0",
 		"@typescript-eslint/parser": "^8.0.0",
 		"biome": "^0.3.3",

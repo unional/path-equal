@@ -64,7 +64,7 @@ importers:
         version: 5.0.0(@swc/jest@0.2.36(@swc/core@1.4.11))(jest-watch-suspend@1.1.2(jest@30.2.0(@types/node@20.12.2)))(jest-watch-toggle-config-2@2.1.0(jest@30.2.0(@types/node@20.12.2)))(jest-watch-typeahead@3.0.1(jest@30.2.0(@types/node@20.12.2)))(jest@30.2.0(@types/node@20.12.2))(ts-jest@29.0.5(@babel/core@7.29.0)(@jest/types@29.6.3)(babel-jest@29.4.3(@babel/core@7.29.0))(jest@30.2.0(@types/node@20.12.2))(typescript@5.0.2))
       '@size-limit/preset-small-lib':
         specifier: ^8.2.4
-        version: 8.2.4(size-limit@8.2.4)
+        version: 8.2.4(size-limit@12.0.1(jiti@2.6.1))
       '@types/node':
         specifier: ^20.0.0
         version: 20.12.2
@@ -93,8 +93,8 @@ importers:
         specifier: ^6.0.0
         version: 6.0.1
       size-limit:
-        specifier: ^8.2.4
-        version: 8.2.4
+        specifier: ^12.0.0
+        version: 12.0.1(jiti@2.6.1)
       ts-jest:
         specifier: ^29.0.5
         version: 29.0.5(@babel/core@7.29.0)(@jest/types@29.6.3)(babel-jest@29.4.3(@babel/core@7.29.0))(jest@30.2.0(@types/node@20.12.2))(typescript@5.0.2)
@@ -2108,6 +2108,15 @@ packages:
   fb-watchman@2.0.2:
     resolution: {integrity: sha512-p5161BqbuCaSnB8jIbzQHOlpgsPmK5rJVDfDKO91Axs5NC1uu3HRQm6wt9cd9/+GtQQIO53JdGXXoyDpTAsgYA==}
 
+  fdir@6.5.0:
+    resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      picomatch: ^3 || ^4
+    peerDependenciesMeta:
+      picomatch:
+        optional: true
+
   figures@1.7.0:
     resolution: {integrity: sha512-UxKlfCRuCBxSXU4C6t9scbDyWZ4VlaFFdojKtzJuSkuOBQ5CNFum+zZXFwHjo+CxBC1t6zlYPgHIgFjL8ggoEQ==}
     engines: {node: '>=0.10.0'}
@@ -2218,6 +2227,7 @@ packages:
   git-raw-commits@4.0.0:
     resolution: {integrity: sha512-ICsMM1Wk8xSGMowkOmPrzo2Fgmfo4bMHLNX6ytHjajRJUqvHOw/TFapQ+QG75c3X/tTDDhOSRPGC52dDbNM8FQ==}
     engines: {node: '>=16'}
+    deprecated: This package is no longer maintained. For the JavaScript API, please use @conventional-changelog/git-client instead.
     hasBin: true
 
   glob-parent@5.1.2:
@@ -2837,9 +2847,9 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  lilconfig@2.0.6:
-    resolution: {integrity: sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==}
-    engines: {node: '>=10'}
+  lilconfig@3.1.3:
+    resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
+    engines: {node: '>=14'}
 
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
@@ -3037,8 +3047,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nanospinner@1.1.0:
-    resolution: {integrity: sha512-yFvNYMig4AthKYfHFl1sLj7B2nkHL4lzdig4osvl9/LdGbXwrdFRoqBS98gsEsOakr0yH+r5NZ/1Y9gdVB8trA==}
+  nanospinner@1.2.2:
+    resolution: {integrity: sha512-Zt/AmG6qRU3e+WnzGGLuMCEAO/dAu45stNbHY223tUxldaDAeE+FxSPsd9Q+j+paejmm0ZbrNVs5Sraqy3dRxA==}
 
   napi-postinstall@0.3.4:
     resolution: {integrity: sha512-PHI5f1O0EP5xJ9gQmFGMS6IZcrVvTjpXjz7Na41gTE7eE2hK11lg04CECCYEEjdc17EV4DO+fkGEtt7TpTaTiQ==}
@@ -3197,9 +3207,6 @@ packages:
 
   performance-now@2.1.0:
     resolution: {integrity: sha512-7EAHlyLHI56VEIdK57uwHdHKIaAGbnXPiw0yWbarQZOKaKpvUIgW0jWRVLiatnM+XXlSwsanIBH/hzGMJulMow==}
-
-  picocolors@1.0.0:
-    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -3488,10 +3495,15 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  size-limit@8.2.4:
-    resolution: {integrity: sha512-Un16nSreD1v2CYwSorattiJcHuAWqXvg4TsGgzpjnoByqQwsSfCIEQHuaD14HNStzredR8cdsO9oGH91ibypTA==}
-    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
+  size-limit@12.0.1:
+    resolution: {integrity: sha512-vuFj+6lDOoBJQu6OLhcMQv7jnbXjuoEn4WsQHlSLOV/8EFfOka/tfjtLQ/rZig5Gagi3R0GnU/0kd4EY/y2etg==}
+    engines: {node: ^20.0.0 || ^22.0.0 || >=24.0.0}
     hasBin: true
+    peerDependencies:
+      jiti: ^2.0.0
+    peerDependenciesMeta:
+      jiti:
+        optional: true
 
   slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
@@ -3665,6 +3677,10 @@ packages:
   tinyexec@1.0.2:
     resolution: {integrity: sha512-W/KYk+NFhkmsYpuHq5JykngiOCnxeVL8v8dFnqxSD8qEEdRfXk1SDM6JzNqcERbcGYj9tMrDQBYV9cjgnunFIg==}
     engines: {node: '>=18'}
+
+  tinyglobby@0.2.15:
+    resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
+    engines: {node: '>=12.0.0'}
 
   tmp@0.0.33:
     resolution: {integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==}
@@ -5050,22 +5066,22 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
-  '@size-limit/esbuild@8.2.4(size-limit@8.2.4)':
+  '@size-limit/esbuild@8.2.4(size-limit@12.0.1(jiti@2.6.1))':
     dependencies:
       esbuild: 0.17.8
       nanoid: 3.3.4
-      size-limit: 8.2.4
+      size-limit: 12.0.1(jiti@2.6.1)
 
-  '@size-limit/file@8.2.4(size-limit@8.2.4)':
+  '@size-limit/file@8.2.4(size-limit@12.0.1(jiti@2.6.1))':
     dependencies:
       semver: 7.3.8
-      size-limit: 8.2.4
+      size-limit: 12.0.1(jiti@2.6.1)
 
-  '@size-limit/preset-small-lib@8.2.4(size-limit@8.2.4)':
+  '@size-limit/preset-small-lib@8.2.4(size-limit@12.0.1(jiti@2.6.1))':
     dependencies:
-      '@size-limit/esbuild': 8.2.4(size-limit@8.2.4)
-      '@size-limit/file': 8.2.4(size-limit@8.2.4)
-      size-limit: 8.2.4
+      '@size-limit/esbuild': 8.2.4(size-limit@12.0.1(jiti@2.6.1))
+      '@size-limit/file': 8.2.4(size-limit@12.0.1(jiti@2.6.1))
+      size-limit: 12.0.1(jiti@2.6.1)
 
   '@swc/core-darwin-arm64@1.4.11':
     optional: true
@@ -6322,6 +6338,10 @@ snapshots:
     dependencies:
       bser: 2.1.1
 
+  fdir@6.5.0(picomatch@4.0.3):
+    optionalDependencies:
+      picomatch: 4.0.3
+
   figures@1.7.0:
     dependencies:
       escape-string-regexp: 1.0.5
@@ -7279,7 +7299,7 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  lilconfig@2.0.6: {}
+  lilconfig@3.1.3: {}
 
   lines-and-columns@1.2.4: {}
 
@@ -7468,9 +7488,9 @@ snapshots:
 
   nanoid@3.3.4: {}
 
-  nanospinner@1.1.0:
+  nanospinner@1.2.2:
     dependencies:
-      picocolors: 1.0.0
+      picocolors: 1.1.1
 
   napi-postinstall@0.3.4: {}
 
@@ -7611,8 +7631,6 @@ snapshots:
 
   performance-now@2.1.0: {}
 
-  picocolors@1.0.0: {}
-
   picocolors@1.1.1: {}
 
   picomatch@2.3.1: {}
@@ -7636,7 +7654,7 @@ snapshots:
   postcss@8.4.21:
     dependencies:
       nanoid: 3.3.4
-      picocolors: 1.0.0
+      picocolors: 1.1.1
       source-map-js: 1.0.2
 
   preferred-pm@3.0.3:
@@ -7889,14 +7907,15 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  size-limit@8.2.4:
+  size-limit@12.0.1(jiti@2.6.1):
     dependencies:
       bytes-iec: 3.1.1
-      chokidar: 3.5.3
-      globby: 11.1.0
-      lilconfig: 2.0.6
-      nanospinner: 1.1.0
-      picocolors: 1.0.0
+      lilconfig: 3.1.3
+      nanospinner: 1.2.2
+      picocolors: 1.1.1
+      tinyglobby: 0.2.15
+    optionalDependencies:
+      jiti: 2.6.1
 
   slash@3.0.0: {}
 
@@ -8077,6 +8096,11 @@ snapshots:
   through@2.3.8: {}
 
   tinyexec@1.0.2: {}
+
+  tinyglobby@0.2.15:
+    dependencies:
+      fdir: 6.5.0(picomatch@4.0.3)
+      picomatch: 4.0.3
 
   tmp@0.0.33:
     dependencies:

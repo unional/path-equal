@@ -8,6 +8,7 @@ jobs:
     uses: unional/.github/.github/workflows/pnpm-verify.yml@main
     with:
       os: '["ubuntu-latest"]'
+      node-version: '["lts/-1", "lts/*"]'
 
   release:
     uses: unional/.github/.github/workflows/pnpm-release-changeset.yml@main

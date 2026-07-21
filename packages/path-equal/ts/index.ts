@@ -13,10 +13,10 @@ function normalizePath(path: string): string {
 		[/^\.\//, ''],
 		[/\/\.\//, '/'],
 		[/\/\.$/, ''],
-		[/\/$/, '']
+		[/\/$/, ''],
 	]
 
-	replace.forEach(array => {
+	replace.forEach((array) => {
 		while (array[0].test(path)) {
 			path = path.replace(array[0], array[1])
 		}

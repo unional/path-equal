@@ -1,13 +1,13 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./packages/path-equal"
-    },
-    {
-      "path": "./packages/uni-path"
-    }
-  ],
+	"files": [],
+	"references": [
+		{
+			"path": "./packages/path-equal"
+		},
+		{
+			"path": "./packages/uni-path"
+		}
+	],
 	"typedocOptions": {
 		"entryPointStrategy": "packages",
 		"entryPoints": ["packages/path-equal"],

@@ -6,13 +6,7 @@
 		".": "./ts/index.ts"
 	},
 	"publish": {
-		"include": [
-			"license",
-			"readme.md",
-			"ts"
-		],
-		"exclude": [
-			"ts/*.spec.ts"
-		]
+		"include": ["license", "readme.md", "ts"],
+		"exclude": ["ts/*.spec.ts"]
 	}
 }

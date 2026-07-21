@@ -1,13 +1,18 @@
 {
 	"$schema": "https://biomejs.dev/schemas/2.4.0/schema.json",
 	"extends": ["@repobuddy/biome/recommended"],
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
 	"files": {
 		"includes": [
-			"**",
 			"!packages/*/.turbo",
 			"!packages/*/cjs",
 			"!packages/*/coverage",
-			"!packages/*/esm"
+			"!packages/*/esm",
+			"!skills-lock.json"
 		]
 	}
 }

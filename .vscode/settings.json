@@ -1,19 +1,8 @@
 {
-	"cSpell.words": [
-		"depcheck",
-		"macos",
-		"pinst",
-		"pnpm",
-		"repobuddy",
-		"snyk",
-		"testname",
-		"tsbuildinfo"
-	],
+	"cSpell.words": ["depcheck", "macos", "pinst", "pnpm", "repobuddy", "snyk", "testname", "tsbuildinfo"],
 	"json.schemas": [
 		{
-			"fileMatch": [
-				"tsconfig.*.json"
-			],
+			"fileMatch": ["tsconfig.*.json"],
 			"url": "http://json.schemastore.org/tsconfig"
 		}
 	],

@@ -15,10 +15,7 @@
 		"strict": true,
 		"target": "ES2019"
 	},
-	"include": [
-		"ts",
-		"types"
-	],
+	"include": ["ts", "types"],
 	"references": [
 		{
 			"path": "../path-equal"

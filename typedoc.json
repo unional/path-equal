@@ -3,7 +3,5 @@
 	"customTitle": "Universal path module",
 	"titleLink": "https://github.com/unional/path-equal",
 	"entryPointStrategy": "packages",
-	"entryPoints": [
-		"packages/path-equal"
-	]
+	"entryPoints": ["packages/path-equal"]
 }

@@ -19,7 +19,7 @@ it('separator: \\ matches /', () => {
 	expect(pathEqual('a\\b\\c\\', 'a/b/c')).toBe(true)
 })
 
-it(`drive letter: /d/foo should match d:\\foo`, () => {
+it('drive letter: /d/foo should match d:\\foo', () => {
 	expect(pathEqual('/d/foo', 'd:\\foo')).toBe(true)
 })
 

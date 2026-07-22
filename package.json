@@ -25,21 +25,21 @@
 		"version": "changeset version"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "^2.4.0",
 		"@changesets/cli": "^2.26.0",
 		"@commitlint/cli": "^21.0.0",
 		"@commitlint/config-conventional": "^21.0.0",
-		"@biomejs/biome": "^2.4.0",
-		"@repobuddy/biome": "^2.0.0",
-		"@typescript-eslint/eslint-plugin": "^8.0.0",
-		"@typescript-eslint/parser": "^8.0.0",
+		"@repobuddy/biome": "^2.3.1",
+		"@typescript-eslint/eslint-plugin": "^8.16.0",
+		"@typescript-eslint/parser": "^8.16.0",
 		"eslint": "^10.0.0",
 		"eslint-plugin-harmony": "^7.2.0",
-		"eslint-plugin-yml": "^3.0.0",
+		"eslint-plugin-yml": "^3.1.2",
 		"husky": "^9.0.11",
-		"turbo": "^2.0.0",
-		"typedoc": "^0.28.0",
+		"turbo": "^2.9.14",
+		"typedoc": "^0.28.1",
 		"typedoc-plugin-extras": "^4.0.0",
-		"typescript": "^5.0.0"
+		"typescript": "^5.0.2"
 	},
 	"packageManager": "pnpm@11.15.1"
 }

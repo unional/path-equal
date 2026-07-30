@@ -50,7 +50,7 @@
 	"devDependencies": {
 		"@jest/globals": "^30.2.0",
 		"@repobuddy/jest": "^5.0.0",
-		"@size-limit/preset-small-lib": "^12.1.0",
+		"@size-limit/preset-small-lib": "^13.0.0",
 		"@types/node": "^24.12.4",
 		"depcheck": "^1.4.3",
 		"jest": "^30.2.0",
@@ -60,7 +60,7 @@
 		"ncp": "^2.0.0",
 		"npm-run-all2": "^9.0.0",
 		"rimraf": "^6.0.1",
-		"size-limit": "^12.1.0",
+		"size-limit": "^13.0.0",
 		"ts-jest": "^29.0.5",
 		"typescript": "^5.0.2"
 	}
